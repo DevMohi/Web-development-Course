@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: royalblue;
+        }
+        h1:hover{
+            color: bisque;
+            background-color: seagreen;
+            font-weight: 700px;
+        }
+        .middle-person:focus{
+            color: blue;
+            font-weight: 700;
+        }
+        a:visited{
+            color: red;
+        }
+        li:first-child{
+            color: chocolate;
+        }
+        li:last-child{
+            background-color: cadetblue;
+        }
+        /* even  */
+        li:nth-child(2n){
+            color: crimson;
+        }
+        /* odd  */
+        li:nth-child(2n+1){
+            color: blue;
+        }
+        h3::before{
+            content: "Hello ";
+        }
+        h3::after{
+            content: "gello ";
+            background-color: darkblue;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is normal</h1>
+    <input  type="text" >
+    <input class="middle-person" type="text" >
+    <input type="text" >
+    <a href="">google e jao</a>
+    <br>
+    <h3>middle size header- 1</h3>
+    <h3>middle size header- 2</h3>
+    <h3>middle size header- 3</h3>
+    <h3>middle size header- 4</h3>
+    <h3>middle size header- 5</h3>
+    <h3>middle size header- 6</h3>
+    <ul>
+        <li>Ali</li>
+        <li>Dalia</li>
+        <li>Salia</li>
+        <li>Jalia</li>
+        <li>Balia</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+        <li>Sghali</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      li {
+        color: tomato;
+      }
+
+      #fruits-title {
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my DOM</h1>
+    </header>
+    <main id="main-container">
+      <section>
+        <h1>My Awesome DOM de baba</h1>
+        <ul>
+          <li>Player-1</li>
+          <li>Player-2</li>
+          <li>Player-3</li>
+          <li>Dom de re baba</li>
+        </ul>
+      </section>
+
+      <section class="fruit-container">
+        <h1 id="fruits-title">Fruits</h1>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+        </ul>
+      </section>
+
+      <section id="places-container" class="large-text">
+        <h1 id="places-title t">Place i Like</h1>
+
+        <ul id="places-list">
+          <li class="imp-places">Cox</li>
+          <li class="imp-places">Bandarban</li>
+          <li>Bandarban2</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- 1 way  -->
+    <script src="append.js"></script>
+    <script src="dom.js"></script>
+
+    <!-- You can write directly script here  -->
+    <script>
+      //   const liCollection = document.getElementsByTagName("li");
+
+      //   for (const li of liCollection) {
+      //     console.log(li.innerText);
+      //   }
+
+      //   const allHeadings = document.getElementsByTagName("h1");
+
+      //   for (const h1 of allHeadings) {
+      //     console.log(h1.innerText);
+      //   }
+
+      // getElementsByClassName
+      const places = document.getElementsByClassName("imp-places");
+
+      for (place of places) {
+        // console.log(place.innerText);
+      }
+
+      //   querySelectorAll
+      const someLi = document.querySelectorAll(".fruit-container li");
+
+      for (const li of someLi) {
+        // console.log(li.innerText);
+      }
+    </script>
+  </body>
+</html>

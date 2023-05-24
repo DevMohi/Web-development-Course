@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM EVENTS</title>
+  </head>
+  <body>
+    <h1>Dom special events</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(65)">Another Button</button>
+    <br />
+    <!-- option 1  -->
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      Make yellow
+    </button>
+
+    <button id="make-blue">Make Blue</button>
+    <!-- //Option 4  -->
+    <button id="make-purple">Make purple</button>
+
+    <!-- //Final option  -->
+    <button id="make-pink">Make pink</button>
+    <button id="make-green">Make green</button>
+
+    <button id="make-khaki">Make khaki</button>
+
+    <script>
+      //last -> Important
+      document
+        .getElementById("make-khaki")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "khaki";
+        });
+    </script>
+  </body>
+  <script src="events.js"></script>
+</html>

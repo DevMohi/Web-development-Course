@@ -2,6 +2,12 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const depositField = document.getElementById("deposit-field");
   const newTotal = parseFloat(depositField.value);
 
+  depositField.value = "";
+  if (isNaN(newTotal)) {
+    alert("Please provide an integer");
+    return;
+  }
+
   //get deposit total current one
   const depositTotalField = document.getElementById("deposit-total");
   const previousTotal = depositTotalField.innerText;
@@ -13,15 +19,10 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const balanceTotal = document.getElementById("balance-total");
   const previousBalance = parseFloat(balanceTotal.innerText);
 
-
   //Calculate balance total
   const currentBalanceTotal = previousBalance + currentDeposit;
 
   balanceTotal.innerText = currentBalanceTotal;
 
-
-
-
   //clear field
-  depositField.value = "";
 });

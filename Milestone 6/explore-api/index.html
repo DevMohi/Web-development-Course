@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .post {
+        background-color: lightskyblue;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="loadData()">Load Data</button>
+    <button onclick="loadUsers()">Load Users</button>
+    <button onclick="loadUsers2()">Load Users2</button>
+
+    <header>
+      <h1>Display All Posts</h1>
+    </header>
+
+    <main>
+      <section>
+        <h3>All Posts are here</h3>
+        <div id="post-container"></div>
+      </section>
+    </main>
+
+    <div class="users-container">
+      <ul id="users-list"></ul>
+    </div>
+
+    <!-- scripts  -->
+
+    <script src="js/index.js"></script>
+    <script src="js/posts.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
